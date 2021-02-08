@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>contact-work in progress</title>
+        <style>
+        
+            .wrapper{
+                font-family: 'Montserrat', sans-serif;
+                color:white;
+                display:grid;
+                grid-template-columns: 30% 70% ;
+                /*grid-template-columns:repeat(2,1fr);*/
+                grid-gap:1em;
+                /*grid-column-gap:1em;
+                grid-row-gap:1em;*/
+                /*grid-auto-rows:100px;*/
+                grid-auto-rows:minmax(100px,auto);
+            }
+            .wrapper > div{
+                background:rgb(121, 108, 143);
+                padding: 1em;
+                justify-items: center;
+                align-items:start;
+            }
+            .wrapper > div:nth-child(odd){
+                background:rgb(54, 51, 51);
+            }
+            table, th, td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            }
+            img{
+                height:150px;
+            }
+            a{
+                color: rgb(255, 149, 149);
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="webresponse.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                <div class="profile-pic">
+                    <img src="profilepic.png" alt="profile pic">
+
+                </div>
+                <h2>Hello, my name is Michael Weatherburn and below you can find
+                my contact info.</h2><br>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+15555555555">(555)555-5555</a>
+                <br><i class="fas fa-envelope"></i><a href="mailto:maweath1@asu.edu"> maweath1@asu.edu</a>
+                <br><i class="fas fa-map-pin"></i><a href="http://maps.google.com/maps?q=210+Louise+Ave,+Nashville,+TN+37203"> 210, Louise Ave, Nashville, TN 37203</a> 
+               
+            </div>
+            <div>
+                <h1>Objective</h1>
+                <p><h2><br><br>Efficient learner with training in html, css, and javascript. Eager to further hone diverse
+                    skill set and knowledge base, including software compatibility analysis and
+                    progressive web app development.</h2></p>
+                
+            </div>
+            <div>
+                <div class="nested">
+                    <h1>Education</h1>
+                    <table style="width:100%">
+                        <tr>
+                          <th>School</th>
+                          <th>Year Graduated</th> 
+                          <th>GPA</th>
+                        </tr>
+                        <tr>
+                          <td>Elgin High</td>
+                          <td>2018</td>
+                          <td>3.5</td>
+                        </tr>
+                        <tr>
+                          <td>Arizona State University</td>
+                          <td>2022</td>
+                          <td>3.0</td>
+                        </tr>
+                        
+                      </table>
+                </div>
+            </div>
+            <div>
+                <h1>Experience</h1>
+                <ol>
+                    <li>Debugged verifone credit card machines by troubleshooting
+                        miscellaneous problems.
+                        Gathered, organized and distributed technical documentation.
+                        Worked with software development team on reported errors and bugs on
+                        newly released software and assisted in deployment of release fixes.</li>
+                    <li>Researched entrepreneurial startups in different sectors through the EPICS
+                        program.
+                        Delegated work in a team and collaborated on creating applications by
+                        focusing on design as well as implementations.
+                        Analyzed statistical data using both modern and traditional methods.</li>
+                    <li>Worked many different stations each month to provide optimal coverage
+                        and meet production goals.
+                        Instructed junior team members on protocols and procedures of each
+                        station to maximize contributions and productivity.</li>
+                  </ol>
+                
+            </div>
+            <div>
+                <h1>Degree</h1>
+                <h2>Interdisciplinary Studies: Informatics</h2>
+                <h3>2018-2022</h3>
+                
+            </div>
+            <div><h1>References</h1>
+                <ul style="list-style-type:none;">
+                    <li><b>Jack Ryan</b> <br><a href="tel:+15555555555">(555)555-5555</a></li>
+                    <li><b>Michael Clown</b><br> <a href="tel:+15555555555">(555)555-5555</a></li>
+                    <li><b>Eddy Rascal</b><br> <a href="tel:+15555555555">(555)555-5555</a></li>
+                </ul></div>
+        </div>
+    </body>
+
+</html>

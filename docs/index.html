@@ -1,61 +1,349 @@
 <!DOCTYPE html>
-<html> <!--Michael Weatherburn 
-            2/4/2021
-            site located @https://www.public.asu.edu/~maweath1/index.html-->
-    <head>
-        <title>home</title>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        <i class='fas fa-home'></i>
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="webresponse.js"></script>
-    </head>
-        
-        <body>
-            
-            <p>click on the menu icon</p>
-            
-                <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      corssorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="about-me">
+      <nav>
+        <div class="personal_logo">Michael Weatherburn</div>
+        <ul class="nav_link--list">
+          <li class="nav_link">
+            <a
+              href="#languages"
+              class="
+                nav_link--anchor
+                link_hover-effect link_hover-effect--black
+              "
+              >Languages</a
+            >
+          </li>
+          <li class="nav_link">
+            <a
+              href="#projects"
+              class="
+                nav_link--anchor
+                link_hover-effect link_hover-effect--black
+              "
+              >Projects</a
+            >
+          </li>
+          <li class="nav_link">
+            <a
+              href="mailto:mweatherburn00@gmail.com"
+              class="nav_link--anchor nav_link--anchor-primary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="flex flex-1">
+        <div class="about-me_info row">
+          <div class="about-me_info--container">
+            <figure class="about-me_picture--mask">
+              <img
+                src="assets/me.jpeg"
+                class="about-me_picture"
+                alt="face pic"
+              />
+            </figure>
+            <h1 class="about-me_info--title">
+              Hey ! I'm
+              <span class="text--purple">Michael Weatherburn</span>&nbsp;<span
+                class="wave"
+                ><span class="wave">👋</span></span
+              >
+            </h1>
+            <p class="about-me_info--para">
+              I’m a <strong> frontend software developer</strong>, an
+              imaginative thinker, and a technophile obsessed with the latest
+              devices and technologies and how they can be suited to provide
+              better experiences for every user in the world.
+            </p>
+            <div class="about-me_links">
+              <a href="" class="about-me_link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="" class="about-me_link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="" class="about-me_link">
+                <i class="far fa-envelope"></i>
+              </a>
+              <a
+                href="./assets/Example Resume.pdf"
+                target="_blank"
+                class="about-me_link"
+              >
+                <i class="fas fa-file-pdf"></i>
+              </a>
             </div>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="resume.html">resume</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="#about">about</a></li>
-              </ul>
-            <h2>michael weatherburn</h2>
+          </div>
+          <figure class="about-me_img-container">
+            <img
+              src="./assets/undraw_websites.svg"
+              class="about-me_img"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="languages">
+      <div class="container">
+        <div class="row">
+          <h1 class="section_title">
+            This is my <span class="text--purple"> technology stack</span>
+          </h1>
+          <div class="language_list">
+            <div class="language">
+              <figure class="language_img--wrapper">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                  alt="Html Logo"
+                  class="language_img"
+                />
+              </figure>
+              <span class="language_name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language_img--wrapper">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                  alt="CSS Logo"
+                  class="language_img"
+                />
+              </figure>
+              <span class="language_name">CSS</span>
+            </div>
 
-        
-            <div class="mrkrabs">
-                <div class="mrkrabs-text">
-                  
+            <div class="language">
+              <figure class="language_img--wrapper">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                  alt="JavaScript Logo"
+                  class="language_img"
+                />
+              </figure>
+              <span class="language_name">JavaScript</span>
+            </div>
+            <div class="language">
+              <figure class="language_img--wrapper">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                  alt="TypeScript Logo"
+                  class="language_img"
+                />
+              </figure>
+              <span class="language_name">TypeScript</span>
+            </div>
+            <div class="language">
+              <figure class="language_img--wrapper">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png"
+                  alt="Vue Logo"
+                  class="language_img"
+                />
+              </figure>
+              <span class="language_name">Vue</span>
+            </div>
+            <div class="language">
+              <figure class="language_img--wrapper">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png"
+                  alt="Nuxt Logo"
+                  class="language_img"
+                />
+              </figure>
+              <span class="language_name">Nuxt</span>
+            </div>
+            <div class="language">
+              <figure class="language_img--wrapper">
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                  alt="React Logo"
+                  class="language_img"
+                />
+              </figure>
+              <span class="language_name">React</span>
+            </div>
+            <div class="language">
+              <figure class="language_img--wrapper">
+                <img
+                  src="https://mobx.js.org/img/mobx.png"
+                  alt="MobX Logo"
+                  class="language_img"
+                />
+              </figure>
+              <span class="language_name">MobX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section_title">
+            Here are some of my <span class="text--purple">projects</span>
+          </h1>
+          <ul class="project_list">
+            <li class="project">
+              <div class="project_wrapper">
+                <img src="./assets/loopit.png" class="project_img" alt="" />
+                <div class="project_description">
+                  <h3 class="project_description--title">Data project</h3>
+                  <h4 class="project_description--sub-title">
+                    HTML, CSS, JavaScript, SQL
+                  </h4>
+                  <p class="project_description--para">
+                    dummy text efmiof msifoms mdada mkaslmak cmsave eurwr.
+                    eurwi. erwuriqw.qrqwurhuqir.ufdsmcoav.vmwiocmiowd.ewnuviqmo
+                  </p>
+                  <div class="project_description--links">
+                    <a
+                      href="https://www.github.com"
+                      target="_blank"
+                      class="project_description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.yourwebsite.com"
+                      class="project_description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
-            <h1 id="theDiv" style="font-size:60px" >Hi I'm Michael!</h1>
-            <h3 id="theDiv" style="font-size:27px">and I'm a front-end dev.</h3>
-            <a id=resbut href="resume.html">resume</a>
+            </li>
+            <li class="project">
+              <div class="project_wrapper">
+                <img src="./assets/loopit.png" class="project_img" alt="" />
+                <div class="project_description">
+                  <h3 class="project_description--title">Data project</h3>
+                  <h4 class="project_description--sub-title">
+                    HTML, CSS, JavaScript, SQL
+                  </h4>
+                  <p class="project_description--para">
+                    dummy text efmiof msifoms mdada mkaslmak cmsave eurwr.
+                    eurwi. erwuriqw.qrqwurhuqir.ufdsmcoav.vmwiocmiowd.ewnuviqmo
+                  </p>
+                  <div class="project_description--links">
+                    <a
+                      href="https://www.github.com"
+                      target="_blank"
+                      class="project_description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.yourwebsite.com"
+                      class="project_description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project_wrapper">
+                <img src="./assets/loopit.png" class="project_img" alt="" />
+                <div class="project_description">
+                  <h3 class="project_description--title">Data project</h3>
+                  <h4 class="project_description--sub-title">
+                    HTML, CSS, JavaScript, SQL
+                  </h4>
+                  <p class="project_description--para">
+                    dummy text efmiof msifoms mdada mkaslmak cmsave eurwr.
+                    eurwi. erwuriqw.qrqwurhuqir.ufdsmcoav.vmwiocmiowd.ewnuviqmo
+                  </p>
+                  <div class="project_description--links">
+                    <a
+                      href="https://www.github.com"
+                      target="_blank"
+                      class="project_description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.yourwebsite.com"
+                      class="project_description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row footer_row">
+        <a href="#" class="footer_anchor">
+          <figure class="footer_logo">
+            <img src="./assets/logo.svg" class="footer_logo--img" alt="" />
+          </figure>
+          <span class="footer_logo--popper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
 
-             
-            
-
-        
-        </body>
-<script>
-    function myFunction(x) {
-    x.classList.toggle("change");
-    }
-</script>
-        
+        <div class="footer_social--list">
+          <a
+            href="https://www.google.com"
+            class="
+              footer_social--link
+              link_hover-effect link_hover-effect--white
+            "
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.google.com"
+            class="
+              footer_social--link
+              link_hover-effect link_hover-effect--white
+            "
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            href="mailto:mweatherburn00@gmail.com"
+            class="
+              footer_social--link
+              link_hover-effect link_hover-effect--white
+            "
+            target="_blank"
+            >Email</a
+          >
+          <a
+            href="/assets/Example Resume.pdf"
+            class="
+              footer_social--link
+              link_hover-effect link_hover-effect--white
+            "
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+        <div class="footer_copyright">Copyright © 2021 Michael Weatherburn</div>
+      </div>
+    </footer>
+  </body>
 </html>
-
-
